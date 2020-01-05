@@ -1,0 +1,23 @@
+{
+  "name": "NationalID",
+  "version": "0.1.0",
+  "description": "Helper collections for validating and creating mock national ID numbers.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc -b"
+  },
+  "repository": "https://github.com/terjeofnorway/NationalID.git",
+  "author": "terjeofnorway",
+  "license": "GNU GPLv3",
+  "keywords": [
+    "national",
+    "fødselsnummer",
+    "d-nummer",
+    "birth number"
+  ],
+  "dependencies": {
+    "@types/node": "^13.1.4",
+    "typescript": "^3.7.4"
+  }
+}
