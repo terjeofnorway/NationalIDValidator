@@ -19,6 +19,12 @@ describe('Test Validation class', () => {
     expect(validation.checkValidity).toThrow();
   })
 
+  test('it correctly throws an error when fnr is undefined', () => {
+    const mockFnr: any = undefined;
+    const validation: Validation = new Validation(mockFnr);
+    expect(validation.checkValidity).toThrow();
+  })
+
   test('it correctly throws an error when fnr is empty', () => {
     const mockFnr: any = '';
     const validation: Validation = new Validation(mockFnr);

@@ -1,6 +1,7 @@
 import { IValidation } from './validation.interface';
 
 type CalculateControl = (c: Controls) => number;
+type CheckValidity = () => boolean;
 
 enum Controls {
   CONTROL1,
@@ -15,7 +16,11 @@ class Validation implements IValidation {
     [Controls.CONTROL2]: [5,4,3,2,7,6,5,4,3,2],
   }
 
-  private calculateControl: CalculateControl = (c: Controls) => {
+  /** Calculates the control number 1 or 2, depending on argument.
+   * @param {number} c The Control number position to calculate
+   * @returns {number} The control number
+   */
+  private calculateControl: CalculateControl = (c: Controls): number => {
     const multipliers: Array<number> = this.controlMultipliers[c];
 
     let sum = 0;
@@ -27,9 +32,11 @@ class Validation implements IValidation {
     return 11 - (sum % 11);
   }
 
-  checkValidity = () => {
-    if (!this.id) { throw new Error('ID cannot be null, empty string or undefined.')}
-    if (this.id.length === 0) { return false;}
+  /** Checks the validity of the ID as given to the initial constructor
+   * @returns {boolean}
+   */
+  checkValidity: CheckValidity = (): boolean => {
+    if (this.id === null || this.id === undefined || this.id === '') { throw new Error('ID cannot be null, empty string or undefined.')}
 
     const c1: number = this.calculateControl(Controls.CONTROL1);
     const c2: number = this.calculateControl(Controls.CONTROL2);

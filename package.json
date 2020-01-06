@@ -7,7 +7,7 @@
     "start": "tsc -w",
     "build": "tsc -b",
     "test": "jest --watch",
-    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" yarn run test"
+    "coverage": "jest --coverage"
   },
   "repository": "https://github.com/terjeofnorway/NationalID.git",
   "author": "terjeofnorway",
