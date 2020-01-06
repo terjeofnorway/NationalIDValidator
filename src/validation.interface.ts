@@ -2,4 +2,4 @@ interface IValidation {
   checkValidity: () => boolean;
 }
 
-export { IValidation }
+export { IValidation };
