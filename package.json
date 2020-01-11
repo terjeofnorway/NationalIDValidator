@@ -7,13 +7,13 @@
   "scripts": {
     "start": "tsc -w",
     "lint": "eslint src/**/**.ts",
-    "build": "tsc -b",
+    "build": "webpack-cli",
     "test": "jest --config jest.config.js",
     "test:watch": "jest --config jest.config.js --watch",
     "coverage": "jest --coverage",
     "prepare": "npm build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
@@ -25,21 +25,23 @@
     "fødselsnummer",
     "d-nummer"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.4",
     "@typescript-eslint/eslint-plugin": "^2.15.0",
     "@typescript-eslint/parser": "^2.15.0",
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint": "^6.8.0",
     "jest": "^24.9.0",
     "nyc": "^15.0.0",
     "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",
+    "ts-loader": "^6.2.1",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }
