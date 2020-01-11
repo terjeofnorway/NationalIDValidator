@@ -2,13 +2,20 @@
   "name": "national-id-validator",
   "version": "0.1.0",
   "description": "Helper collections for validating and creating mock national ID numbers.",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "tsc -w",
     "lint": "eslint src/**/**.ts",
     "build": "tsc -b",
-    "test": "jest --watch",
-    "coverage": "jest --coverage"
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --config jest.config.js --watch",
+    "coverage": "jest --coverage",
+    "prepare": "npm build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": "https://github.com/terjeofnorway/NationalID.git",
   "author": "terjeofnorway",
