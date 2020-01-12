@@ -17,6 +17,11 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test && npm build"
+    }
+  },
   "repository": "https://github.com/terjeofnorway/NationalID.git",
   "author": "terjeofnorway",
   "license": "GNU GPLv3",
@@ -34,6 +39,7 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.0.7",
     "jest": "^24.9.0",
     "nyc": "^15.0.0",
     "prettier": "^1.19.1",
