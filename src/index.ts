@@ -1,4 +1,4 @@
-import * as Validation from './validation/validation';
+import * as Validation from './validation/';
 
 const isValid = Validation.isValid;
 
