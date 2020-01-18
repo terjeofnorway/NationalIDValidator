@@ -1,4 +1,4 @@
 import { isValid } from './isValid';
-import { getTypeOfID, IDTypes } from './getTypeOfId';
+import { getTypeOfID } from './getTypeOfId';
 
-export { isValid, getTypeOfID, IDTypes };
+export { isValid, getTypeOfID };

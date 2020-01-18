@@ -1,4 +1,5 @@
-import { getTypeOfID, IDTypes } from '../src/validation/';
+import { getTypeOfID } from '../src/validation/';
+import { IDTypes } from '../src/types';
 
 describe('getTypeOfID', () => {
   test('it returns the correct type for FNUMBER (norwegian fødselsnummer)', () => {

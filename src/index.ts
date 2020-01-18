@@ -1,6 +1,7 @@
 import * as Validation from './validation/';
+import { GetTypeOfID, IsValid } from './types';
 
-const isValid = Validation.isValid;
-const getTypeOfID = Validation.getTypeOfID;
+const isValid: IsValid = Validation.isValid;
+const getTypeOfID: GetTypeOfID = Validation.getTypeOfID;
 
 export { isValid, getTypeOfID };

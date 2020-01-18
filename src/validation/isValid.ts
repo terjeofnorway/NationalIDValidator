@@ -1,5 +1,6 @@
+import { IsValid } from '../types';
+
 type CalculateControl = (c: Controls) => number;
-type CheckValidity = () => boolean;
 
 enum Controls {
   CONTROL1,
