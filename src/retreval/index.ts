@@ -1,3 +1,4 @@
-import { getTypeOfID } from './getTypeOfID';
+import { getTypeFromID } from './getTypeFromID';
+import { getGenderFromID } from './getGenderFromID';
 
-export { getTypeOfID };
+export { getTypeFromID, getGenderFromID };

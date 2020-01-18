@@ -3,7 +3,13 @@ enum IDTypes {
   FNUMBER,
 }
 
-type GetTypeOfID = (id: string) => IDTypes;
+enum Genders {
+  MALE,
+  FEMALE,
+}
+
+type getTypeFromID = (id: string) => IDTypes;
+type GetGenderFromID = (id: string) => Genders;
 type IsValid = (id: string) => boolean;
 
-export { IDTypes, GetTypeOfID, IsValid };
+export { IDTypes, Genders, getTypeFromID, GetGenderFromID, IsValid };

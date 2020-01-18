@@ -3,6 +3,6 @@ import * as Retreval from './Retreval/';
 import * as Types from './types';
 
 const isValid: Types.IsValid = Validation.isValid;
-const getTypeOfID: Types.GetTypeOfID = Retreval.getTypeOfID;
+const getTypeFromID: Types.getTypeFromID = Retreval.getTypeFromID;
 
-export { isValid, getTypeOfID };
+export { isValid, getTypeFromID };

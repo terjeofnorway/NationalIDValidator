@@ -1,6 +1,6 @@
-import { GetTypeOfID, IDTypes } from '../types';
+import { getTypeFromID, IDTypes } from '../types';
 
-const getTypeOfID: GetTypeOfID = (id: string) => {
+const getTypeFromID: getTypeFromID = (id: string) => {
   if (!id) {
     throw new Error('ID is undefined');
   }
@@ -8,4 +8,4 @@ const getTypeOfID: GetTypeOfID = (id: string) => {
   return firstDigit > 3 ? IDTypes.DNUMBER : IDTypes.FNUMBER;
 };
 
-export { getTypeOfID };
+export { getTypeFromID };
