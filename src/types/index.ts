@@ -4,8 +4,8 @@ enum IDTypes {
 }
 
 enum Genders {
-  MALE,
-  FEMALE,
+  MALE = 'MALE',
+  FEMALE = 'FEMALE',
 }
 
 type getTypeFromID = (id: string) => IDTypes;
