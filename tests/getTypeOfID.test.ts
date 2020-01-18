@@ -1,4 +1,4 @@
-import { getTypeOfID } from '../src/validation/';
+import { getTypeOfID } from '../src/retreval/';
 import { IDTypes } from '../src/types';
 
 describe('getTypeOfID', () => {
