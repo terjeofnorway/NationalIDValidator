@@ -3,5 +3,5 @@ module.exports = {
   testEnvironment: 'node',
   roots: ['tests'],
   collectCoverage: true,
-  coverageReporters: ['json', 'html'],
+  coverageReporters: ['json'],
 };
