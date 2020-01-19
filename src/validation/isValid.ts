@@ -11,7 +11,7 @@ enum Controls {
  * @param { string } ID The ID to check
  * @returns { boolean } Wether the ID is valid or not.
  */
-const isValid = (ID: string): boolean => {
+const isValid: IsValid = (ID: string): boolean => {
   const controlMultipliers: { [key in Controls]: Array<number> } = {
     [Controls.CONTROL1]: [3, 7, 6, 1, 8, 9, 4, 5, 2],
     [Controls.CONTROL2]: [5, 4, 3, 2, 7, 6, 5, 4, 3, 2],
