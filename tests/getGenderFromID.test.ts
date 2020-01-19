@@ -1,4 +1,4 @@
-import { getGenderFromID } from '../src/retreval';
+import { getGenderFromID } from '../src/retrieval';
 import { Genders } from '../src/types';
 
 describe('getGenderFromID', () => {

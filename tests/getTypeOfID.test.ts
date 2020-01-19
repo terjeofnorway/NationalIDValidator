@@ -1,4 +1,4 @@
-import { getTypeFromID } from '../src/retreval/';
+import { getTypeFromID } from '../src/retrieval/';
 import { IDTypes } from '../src/types';
 
 describe('getTypeFromID', () => {
