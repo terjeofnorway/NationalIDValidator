@@ -1,5 +1,5 @@
 import * as Validation from './validation/';
-import * as Retreval from './Retreval/';
+import * as Retreval from './retreval/';
 import * as Types from './types';
 
 const isValid: Types.IsValid = Validation.isValid;
