@@ -1,10 +1,10 @@
-import { getTypeFromID, IDTypes } from '../types';
+import { GetTypeFromID, IDTypes } from '../types';
 
 /** Checks if the type of ID is FNUMBER (fødselsnummer) or DNUMBER (d-nummer)
  * @param { string } ID The ID to check.
  * @returns { string } 'FNUMBER' || 'DNUMBER'
  */
-const getTypeFromID: getTypeFromID = (id: string) => {
+const getTypeFromID: GetTypeFromID = (id: string): IDTypes => {
   if (!id) {
     throw new Error('ID is undefined');
   }
