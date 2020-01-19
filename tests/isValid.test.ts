@@ -1,4 +1,4 @@
-import { isValid } from '../src/validation/validation';
+import { isValid } from '../src/validation/';
 
 describe('Test Validation class', () => {
   test('it correctly validates a valid fnr', () => {
