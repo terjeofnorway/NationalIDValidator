@@ -1,5 +1,5 @@
-import { getDateFromID } from '../src/retreval';
-import { getCenturyFromIndividDigits } from '../src/retreval/getDateFromID';
+import { getDateFromID } from '../src/retrieval';
+import { getCenturyFromIndividDigits } from '../src/retrieval/getDateFromID';
 
 describe('getCentury', () => {
   test('It returns 2000 for people with individ digits 500-999', () => {
