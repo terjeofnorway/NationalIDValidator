@@ -2,14 +2,47 @@
 
 Allows you to both validate and create mock national IDs.
 
-# Usage
-## Node.js
-1. yarn add ```@terjeofnorway/nationalid```
-2. ```const nationalid = require('nationalid')```
-3. ```const isValidID = nationalid.isValid('01015512345')```
+## Installation
 
+```javascript
+yarn add @deploythenscotch/nationalid
+```
+or
+```javascript
+npm install @deploythenscotch/nationalid
+```
 
-# API
-## Validation
-To validate an ID call ```isValid()```;
+## Usage
+### ES5
+```javascript
+const nationalID = require('@deploythenscotch/nationalid')
+const isValidID = nationalID.isValid('18100749331')
+```
+
+## Usage
+### ES2016+
+```javascript
+import nationalID from @deploythenscotch/nationalid';
+const isValidID = nationalID.isValid('18100749331')
+```
+
+## Methods
+```javascript
+import nationalID from @deploythenscotch/nationalid';
+
+// Check if the ID is valid. Works with both "fødselsnummer" and "d-nummer".
+// Returns true || false.
+nationalID.isValid('18100749331') // true;
+
+// Get the type based on the ID.
+// Returns 'FNUMBER' || 'DNUMBER'
+nationalID.getTypeFromID('18100749331') // 'FNUMBER'
+
+// Get the gender based on the ID.
+// Returns 'MALE' OR 'FEMALE'
+nationalID.getGenderFromID('18100749331') // 'MALE'
+
+// Get the date from ID. Will return a native date object.
+// Returns Date object
+nationalID.getDateFromID('18100749331') // Fri Oct 18 1907 01:00:00 GMT+0100
 
