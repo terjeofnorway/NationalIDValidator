@@ -3,7 +3,6 @@
 [![](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![](https://img.shields.io/bundlephobia/minzip/@deploythenscotch/national-id-validator)](https://opensource.org/licenses/MIT)
 
-
 # National Id
 
 Allows you to both validate and create mock national IDs.
@@ -29,19 +28,17 @@ const nationalID = require('@deploythenscotch/national-id-validator');
 const isValidID = nationalID.isValid('18100749331');
 ```
 
-## Usage
-
 ### ES2016+
 
 ```javascript
-import nationalID from @deploythenscotch/national-id-validator';
+import nationalID from @deploythenscotch/national-id-validator
 const isValidID = nationalID.isValid('18100749331')
 ```
 
 ## Methods
 
 ```javascript
-import nationalID from @deploythenscotch/national-id-validator';
+import nationalID from @deploythenscotch/national-id-validator
 
 // Check if the ID is valid. Works with both "fødselsnummer" and "d-nummer".
 // Returns true || false.
