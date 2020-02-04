@@ -24,7 +24,7 @@
   },
   "repository": "https://github.com/terjeofnorway/NationalID.git",
   "author": "terjeofnorway",
-  "license": "GNU GPLv3",
+  "license": "MIT",
   "keywords": [
     "national id",
     "fødselsnummer",
