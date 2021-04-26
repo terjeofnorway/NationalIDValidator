@@ -23,7 +23,7 @@ jobs:
 
       - name: 'Install, test and build'
         run: |
-          npm install
+          npm install --no-save
           npm test
           npm build
 
