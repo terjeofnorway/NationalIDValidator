@@ -7,7 +7,7 @@ enum Controls {
   CONTROL2,
 }
 
-/** Checks if an ID is valid
+/** Checks if an ID is valid!
  * @param { string } ID The ID to check
  * @returns { boolean } Wether the ID is valid or not.
  */
