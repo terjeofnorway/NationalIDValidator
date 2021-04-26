@@ -10,6 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Setup git user
+        run: |
+          git config --global user.name "$(git --no-pager log --format=format:'%an' -n 1)"
+          git config --global user.email "$(git --no-pager log --format=format:'%ae' -n 1)"
+
       - name: 'Setup Node'
         uses: actions/setup-node@v2
         with:
@@ -21,6 +26,7 @@ jobs:
           npm install
           npm test
           npm build
+
       - name: 'Version and publish'
         run: |
           npm version patch

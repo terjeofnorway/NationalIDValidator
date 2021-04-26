@@ -26,7 +26,7 @@ jobs:
 
       - name: 'Version and publish'
         run: |
-          npm version patch --preid=beta
+          npm version prepatch --preid=beta
           npm publish --tag=beta
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
