@@ -16,9 +16,14 @@ jobs:
           node-version: '14'
           registry-url: https://registry.npmjs.org/
 
-      - run: npm test
-      - run: npm build
-      - run: npm version patch
-      - run: npm publish
+      - name: 'Install, test and build'
+        run: |
+          npm install
+          npm test
+          npm build
+      - name: 'Version and publish'
+        run: |
+          npm version patch
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
