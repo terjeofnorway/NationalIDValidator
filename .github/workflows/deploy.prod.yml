@@ -24,6 +24,7 @@ jobs:
 
       - name: 'Publish'
         run: |
+          npm version ${{ steps.get-latest-tag.outputs.tag }} --no-git-tag-version
           npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
