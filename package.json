@@ -15,8 +15,7 @@
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "postversion": "git push && git push --tags",
-    "version-patch:dev": "npm version patch --preid=beta && npm publish --tag=beta",
-    "version-patch:prod": "npm version patch && npm publish"
+    "version-patch": "npm version patch"
   },
   "husky": {
     "hooks": {
