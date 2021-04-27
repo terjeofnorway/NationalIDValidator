@@ -1,6 +1,6 @@
 {
   "name": "@deploythenscotch/national-id-validator",
-  "version": "1.0.9-beta.0",
+  "version": "1.0.10-beta.0",
   "description": "Helper collections for validating and creating mock national ID numbers.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
